@@ -1,0 +1,71 @@
+/* Общие стили для страниц */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:#bdd890;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    margin-top: 30px;
+    color: #333;
+}
+
+.rounded-image {
+    width: 380px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Добавленные стили для списка имен */
+#outputNames {
+    margin-top: 20px;
+}
+
+#outputNames p {
+    cursor: pointer;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#outputNames p:hover {
+    text-decoration: underline;
+}

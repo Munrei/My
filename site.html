@@ -1,0 +1,62 @@
+<!-- Первая вкладка: сайт.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <style>
+        body {
+            margin-bottom: 60px; /* Дополнительный отступ вниз для блока с паролем */
+        }
+
+        #passwordContainer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px -2px 5px 0px #888888; /* Тень для подчеркивания блока с паролем */
+        }
+
+        #passwordInput {
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var passwordInput = document.getElementById("passwordInput");
+            var passwordButton = document.getElementById("passwordButton");
+
+            passwordButton.addEventListener("click", function() {
+                var enteredPassword = passwordInput.value;
+
+                // Проверка пароля (замените "вашПароль" на фактический пароль)
+                if (enteredPassword === "21" || enteredPassword === "вашПароль") {
+                    // Переход на третью вкладку
+                    window.location.href = "site3.html";
+                } else {
+                    // Пароль неверный, можно вывести сообщение об ошибке
+                    alert("Неверный пароль. Попробуйте еще раз.");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <img src="fon.jpg" alt="" class="rounded-image">
+    <div class="button-container">
+        <a href="site2.html" class="button">Перейти во 2</a>
+    </div>
+
+    <div id="passwordContainer">
+        <label for="passwordInput">Для керівників спйта</label>
+        <input type="password" id="passwordInput">
+        <button id="passwordButton">Войти</button>
+    </div>
+</body>
+</html>

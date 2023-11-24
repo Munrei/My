@@ -1,0 +1,75 @@
+/* Общие стили для страницы */
+body {
+    text-align: center;
+    background-color: #fff155; /* Изменено на общий цвет фона */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Стили для контейнера имен и избранных имен */
+#outputNames, #favoritesNames {
+    background-color: #fff155; /* Общий цвет фона для контейнеров и списков */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Стили для списка имен и избранных имен */
+#outputNames ul, #favoritesNames ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#outputNames li, #favoritesNames li {
+    margin-bottom: 10px;
+}
+
+/* Стили для кнопок */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #baff80;
+    color: white;
+    border-radius: 5px;
+}
+
+.delete-button, .remove-favorite-button {
+    background-color: #ff9315;
+}
+
+.favorite-button {
+    background-color: #a4ff00;
+}
+
+/* Стили для изображений */
+.rounded-image {
+    width: 380px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+/* Стили для параграфов в контейнерах пользователя */
+.user-container p {
+    margin: 0;
+}
+
+/* Стили для кнопок в контейнерах пользователя */
+.user-container button {
+    margin-left: 10px;
+}
+
+.user-container p {
+    margin: 0;
+    font-size:20px; /* Измени размер шрифта на нужный тебе */
+}

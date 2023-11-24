@@ -1,0 +1,53 @@
+<!-- Вторая вкладка: сайт2.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Вторая страница</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.getElementById("dataForm");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+
+                var existingData = JSON.parse(localStorage.getItem("userData")) || [];
+
+                existingData.push({ name: name, email: email, phone: phone });
+
+                localStorage.setItem("userData", JSON.stringify(existingData));
+
+                alert("Вы отправили данные");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Вторая страница</h1>
+    <img src="fon.jpg" alt="" class="rounded-image">
+    
+    <form id="dataForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <input type="submit" value="Отправить">
+    </form>
+
+    <div class="button-container">
+        <a href="site.html" class="button">Перейти в 1</a>
+        <a href="site3.html" class="button">Перейти в 3</a>
+    </div>
+</body>
+</html>
